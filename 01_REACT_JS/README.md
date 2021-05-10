@@ -163,20 +163,36 @@ npm i uuid
 
 
 # Amplify hosting
-```sh
-amplify add hosting
-```
+
 ## Result
 ```sh
 amplify add hosting
-? Select the plugin module to execute Hosting with Amplify Console (Managed hosting with custom domains, Continuous deployment)
-? Choose a type Continuous deployment (Git-based deployments)
-? Continuous deployment is configured in the Amplify Console. Please hit enter once you connect your repository 
-Amplify hosting urls: 
-┌──────────────┬────────────────────────────────────────────┐
-│ FrontEnd Env │ Domain                                     │
-├──────────────┼────────────────────────────────────────────┤
-│ main         │ https://main.d1l1kwcqq235gy.amplifyapp.com │
+# ? Select the plugin module to execute Hosting with Amplify Console (Managed hosting with custom domains, Continuous deployment)
+# ? Choose a type Continuous deployment (Git-based deployments)
+# ? Continuous deployment is configured in the Amplify Console. Please hit enter once you connect your repository 
+# Amplify hosting urls: 
+# ┌──────────────┬────────────────────────────────────────────┐
+# │ FrontEnd Env │ Domain                                     │
+# ├──────────────┼────────────────────────────────────────────┤
+# │ main         │ https://main.d27calhvr9nc4h.amplifyapp.com │
+# └──────────────┴────────────────────────────────────────────┘
+```
+
+# Amplify api
+
+```sh
+amplify add api
+# ? Please select from one of the below mentioned services: GraphQL
+# ? Provide API name: kiocompareyourproper
+# ? Choose the default authorization type for the API API key
+# ? Enter a description for the API key: Kio compare your property
+# ? After how many days from now the API key should expire (1-365): 365
+# ? Do you want to configure advanced settings for the GraphQL API No, I am done.
+# ? Do you have an annotated GraphQL schema? No
+# ? Do you want a guided schema creation? Yes
+# ? What best describes your project: One-to-many relationship (e.g., “Blogs” with “Posts” and “Comments”)
+# ? Do you want to edit the schema now? Yes
+# Please edit the file in your editor: /Users/robin8a/Documents/react_ws/kio-compare-your-property-rjs-app/amplify/backend/api/kiocompareyourproper/schema.graphql
 ```
 
 # Amplify auth
